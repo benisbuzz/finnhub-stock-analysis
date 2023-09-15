@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "finnhub-stock-analysis"
+version = "0.1.0"
+description = "using Finnhub API to conduct fundamental analysis on listed stocks"
+authors = ["benisbuzz <ben@danziger.uk>"]
+readme = "README.md"
+packages = [{include = "finnhub_stock_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+finnhub-python = "^2.4.18"
+fredpy = "^3.2.8"
+requests = "^2.31.0"
+numpy = "^1.25.2"
+pandas = "^2.1.0"
+matplotlib = "^3.8.0"
+python-dotenv = "^1.0.0"
+ipython = "^8.15.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
